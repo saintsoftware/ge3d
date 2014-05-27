@@ -1,0 +1,15 @@
+Often the code editor is a very large topic with endless forum topics about what is best, though company's will try to sell their most elaborated IDE often what you need is the most simple and practical tool to work with I try many over the years but I suggest this 2:
+
+Notepad++
+
+A very light but can be extend with many plug-ins is a very stable project, very active and receive a lot of updates over the years. It have the down side that only works on windows.
+
+BlueFish :
+
+A very nice project, that comes with a very well structured set of functionality that you may need, is pretty straight forward and does what is necessary to do.
+
+IDE:
+
+The IDE is a tool where you can in most cases debug your code on the fly, it may have some advantages, but the end result is not equal if you load the code your self, and if you need more information provided you still probably go and load your application just to check one or another detail.
+
+For this reason is not with admiration that people often use UnitTest and other debug tools like GNU debugger, etc, to find those nasty bugs that tend to escape the developer eye;

@@ -1,0 +1,32 @@
+
+The Current Game Engine file in use is : "image.txt" .
+
+
+About my self:
+
+I'm Graduated in Multimedia from Portugal, was a active Magic The Gathering Player, and once finished university made may specialization in web development and game design. 
+
+Projects:
+
+Saint Software
+
+Is my small company, that is giving its first steps.
+
+Medivel Titans
+
+A old school battle arena online oriented for the Linux community.
+
+Battle of Worlds
+
+A simple Browser RPG that uses a class system, is kind half way, need a bit more development to be finished.
+
+Tides of Time
+
+A Fantasy conquest Browser game that uses a management system, is in a late fase of development.
+
+Links:
+
+www.saintsoftware.eu.pn
+www.mediveltitans.eu.pn
+www.battleofworlds.eu.pn
+www.tidesoftimes.eu.pn

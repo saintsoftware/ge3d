@@ -1,0 +1,39 @@
+Linux have become a very stable operation system by adding many years of development, but still it is a bit more complex then windows it have
+more particularities that need to be understand and learned.
+
+One of the main issues when people come to the Linux scene is to understand distributions, though some people may disagree with me, the main Linux distribution today in use is Ubuntu thank to its backend canonical support.
+
+Ubuntu come with a lot of flavores or distributions which can make new users a bit confused on what to use. Since Linux is Open Source this allows people or small teams to develop a new set of packates that are laydown on top of the Main Linux distribution, or the core of the O.S. 
+Though not exactly the same was the main distribution it uses the same commands, principles and logic.
+
+Ubuntu :
+
+A standard comes with the most common set of applications that you may need thought not that well suited for older computers since it loads 3D menus and stuff that can be found in modern Operation Systems but it consumes that extra memory /resources that it may be needed for others tasks.
+
+Lubuntu : 
+
+It is the core of Ubuntu + Lxde interface : a very light OS which run's only with 300 mb memory on a "Windows" like interface ; It is designed to make possible for users to recycle their older machines, that could not run a heavy O.S. with the programs.
+
+ Xubuntu:
+
+ Ubuntu + Xfce interface: not so light was Lubuntu but still very light; it is close connected to Lubuntu in the light weight Linux distribution 
+composition.
+
+Kubuntu:
+
+Ubuntu + KDE interface : is a bit more heavy weight and is a direct alternative in terms of resources to Ubuntu main interface and set of tools.
+
+Mint:
+
+Is a out side project very popular that also runs with the Ubuntu core. Is not officially supported was it is the others distributions but very used.
+
+*There are others distributions but since every thing become so easy and bug free it was become a very dominating O.S. Still some people like Open Suse and other distributions, but the debate on the most used Linux I think is pretty dead since Ubuntu was the most user community, probably because it direct it's tools to the home user, while others often go for the development or enterprise market's which have smaller community.
+
+Bootable Pen drive:
+
+Linux can be booted from a pen drive with out altering your file system which is a very good thing, you can try many of the built in tools with out installing it directly to your system.
+
+Can be also useful to repair disk or analyses your system.
+
+http://unetbootin.sourceforge.net/ 
+

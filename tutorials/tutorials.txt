@@ -1,0 +1,11 @@
+
+Basic programming language tutorials can be found on:
+
+http://www.w3schools.com/  - Advised start with PHP, very simple language, *optional Javascript
+
+
+C tutorials are bit more advanced:
+
+http://www.tutorialspoint.com/cprogramming/c_structures.htm  - good starting point
+http://c.learncodethehardway.org/ - a C tutorial oriented a bit for Linux Users 
+
