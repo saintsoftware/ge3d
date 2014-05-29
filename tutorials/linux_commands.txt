@@ -1,0 +1,10 @@
+/* UBUNTU Commands */
+
+chown $USER -R ~/.blabla = sudo chown $USER -R "Folder name"
+sudo chmod 777 -R SciTEGlobal.propertieDD 						// Recursive set of permissions
+type "firefox"															 // know the directory of a program
+whereis firefox													 // files of a program
+gnome-system-monitor											 // control panel
+sudo dpkg --get-selections 										// get a list of installed files
+echo $PATH 														// list of added paths
+ls -al 																// show hidden or just ls basic file list

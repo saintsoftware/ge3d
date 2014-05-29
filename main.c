@@ -8,17 +8,17 @@
 	*Game check first since it's the main activity of players.
 */
 	
-char module = "main_menu";
+char segment = "main_menu";
 
 int main(){ 
 	
-	if(module == "game") {
+	if(segment == "game") {
 		// Load game
 	}
-	else if(module == "main_menu") {
+	else if(segment == "main_menu") {
 		// Load Main Menu
 	}
-	else if(module == "loading_menu") {
+	else if(segment == "loading_menu") {
 		// Load Loading_menu
 	}
 }		
