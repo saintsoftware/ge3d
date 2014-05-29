@@ -5,7 +5,6 @@
 /*
 	Main
 	empty loads nothing to printf
-	*Game check first since it's the main activity of players.
 */
 	
 char segment = "main_menu";
