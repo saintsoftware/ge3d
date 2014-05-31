@@ -1,0 +1,9 @@
+Info:
+
+Not sure if the code is correct i found it din't test it but it seems legit it was poste at:
+
+Screen resolution : http://surfingtroves.blogspot.pt/2011/01/how-to-get-screen-resolution-in-linux-c.html
+
+Updates :
+
+...

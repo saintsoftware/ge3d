@@ -1,0 +1,3 @@
+void png(void){
+    puts("Hello, I'm a shared library png");
+}

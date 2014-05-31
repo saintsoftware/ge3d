@@ -9,6 +9,9 @@ C tutorials are bit more advanced:
 http://www.tutorialspoint.com/cprogramming/c_structures.htm  - good starting point
 http://c.learncodethehardway.org/ - a C tutorial oriented a bit for Linux Users 
 
+http://faq.cprogramming.com/cgi-bin/smartfaq.cgi#pic  - Development FAQ about C and C++
+
+
 How to work with GitHub:
 
 there a lot of tutorials but this one is the more objective that explained things in pratical terms -
