@@ -1,0 +1,64 @@
+Update on the code:
+
+Previously you could read on the main controller for the project:
+
+module = "main_menu";
+
+if(module == "main_menu"){
+// load main menu
+}
+else if (module == "game"){
+//load game
+}
+...
+------------------------------
+
+actually they are not modules they are segments now you can read
+
+segment = "main_menu";
+
+if(segment== "main_menu" )
+...
+----------------------------------------------------------------------------------------------
+
+This way one can see up front, that we talking about tree roots was in the example, called segments in the theory, thought they are all connected to the main wood, they serve different purposes, and can be isolated with out affecting the structure. Or at least that is suppose to be the end result.
+
+------------------------------------------------------
+
+Another thing that i forget to explain is variables.
+
+Most people believe that they need to wrap a function in to another function with the variables, but that is a STG style in GTS the rule is to depopulate variables which leads to  Segmentation". And there for more reusable, etc...
+
+---------------
+Single Page Segmentation - ex login
+---------------
+
+$table_users = users;
+$user_name = "";
+$password = "";
+$validation_rule;
+$filters;
+$encrypt_hash; // This may be needed in other Segments; probably need to go up a level or two...
+...
+
+$result = db_select(to our $table_users);
+$result = db_update(call to the $table_users);
+
+---------------------------------------------------
+
+We could wrap every thing inside another function and end the debate, but what you gain with Segmentation is that, you write less code, you just need to move variables up and down in levels. The code is still was reusable was any OOP class, and the readability is increased beyond the OOP
+capability. To implement this code to another place is just necessary to tweak variables around and is easy implemented. When new functions need to be declared they are not that hard to be implemented because you already have a structure available with your previous declared variables.
+
+This is one of the strong point's of Segmentation your code can allays be synthesised. This can't happen in OOP because you create a larger set of base rules which do not allow to synthesise the code beyond some levels...
+
+Variable collision?
+
+A advantage of Segmentation is very hard to have variable collision since you are writing your code by levels, this code here is in the end of the Segment, so you can only have variable collision on the sub Segments, which in this case there are none beyond this point... Since your code is Segmented variable collision may happen at the top level, but is just a small amount and easy to fix.
+
+Once you fix it no longer is necessary to hurry since the code start to settle down, it becomes more stable was you work with it and not the other way around was it may happen if you start to mix STG logic on to it. You may not have variable collision in by mixing STG but you end up with another set of problems, like readability and usage of more code.
+
+The problem with not using Segmentation is that though is "faster" to write one application it will extremely hard to leave the scoop of what you are doing since you needed to declare new names for variables. There for translates in the need to learn not just the language you are working with but several programming languages which are the derivations of your work. This happens a lot with frameworks, instead just one code from a framework that every one can work on it you end up with several frameworks, some with several different functionality, in some cases that could be reused in to other frameworks but that is not always possible since, you end up with different languages. And if that is possible in some cases you still need to go learn how this stuff was written by the original author...
+
+What seemed better on a short terms when analysed on learning curves, readability, and so on... things may start to fade away...
+
+
