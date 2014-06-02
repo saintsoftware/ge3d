@@ -1,3 +1,0 @@
-void jpg(void){
-    puts("Hello, I'm a shared library");
-}
