@@ -2,6 +2,9 @@
 	GE game Engine for Linux
 		
 
+--------------------------------------------
+
+Updated the image_lib.c which now explain's the use of Segmentation in C, with live examples... 
 
 ------------------------------------------
 

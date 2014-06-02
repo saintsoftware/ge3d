@@ -163,25 +163,22 @@ Is just a matter of reset top dependencies or include the old dependencies only 
 	 
 -------------------------------	 
 	 
-	 You can see that just because you can make the code dependent does not mean it is 100% dependent 
-	 was one may think it is... Once the dependency start to be visible it will be more easy to 
-	 change them...
+	 You can see that just because you can make the code dependent does not mean it is 100% dependent... 
+	 Once those dependency become visible the process of actually doing GTS it will be evident...
 
 */
 /*
-	A example for common functions:
+	A example for common used functions:
 
-	open or load a common image buffer ...
-	
-	that will be included at the image segment and available at the lower level...
+	A function that is load at top Segment, that work with common variables and is also called at sub Segments
 */	
-	function load buffer(buffer){ // common loader for example
+	function load buffer(buffer){ // Some kind of common loader...
 		return buffer
 	}
 /*	
 
 /*
-	Not workin atm, just for the sake of development and example illustration...
+	Not working atm, just for the sake of development and example illustration...
 */
 
 
