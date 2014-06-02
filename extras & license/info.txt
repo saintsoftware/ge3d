@@ -14,7 +14,3 @@ Perspective:
 
 One of the goals of the engine is to produce better code structure also to aid others in the process of learning.
 
-Disclaimer's:
-
-JDC is the author of the theory of Segmentation, which is a structure develop in Procedural code style that 
-mimic a practical application of the GTS Logic Composition. 

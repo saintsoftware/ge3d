@@ -39,6 +39,23 @@
 	#include "screen/screen_lib.c"
 #endif 
 
+/*
+	Project	Info
+*/
+
+char project_title = "Ge3d Game Engine For linux";
+char project_email = "general@saintsoftware.eu.pn";
+char project_author = "jdc"; 
+
+/*
+	Database 
+*/
+	
+char db_pass = "";
+char db_user = "root";
+char db_host = "localhost";	
+char db_type = "mysql";
+char db_table = "users";
 
 /*
 	Main Segments Wood level
@@ -48,8 +65,6 @@
 char segment[13] = "loading_menu"; //max leng for array string we will be using + 1 for the end of line /0.
 char *segment_p = segment;
 
-/* function declaration goes here.*/
-//int jpg(char);
 
 int main(){ //int argc, char *argv[]  // args to do loading for printf
 	
@@ -67,8 +82,14 @@ int main(){ //int argc, char *argv[]  // args to do loading for printf
 	else if(0 == strncmp(segment_p, "loading_menu", 13 ) ){
 		printf("Active Segment is %s.\n", segment_p);
 		image();
-		png("my adress1");
-		jpg("my adress2");
+		
+		clrscr();
+		printf("Loading bitmap demo");
+		loadbitmap([red]"MyBitmap.bmp"[/red]);
+		getch();		
+		
+		//png("my adress1");
+		//jpg("my adress2");
 	}
 	else{
 		printf("Segment %s not found .\n", segment_p);

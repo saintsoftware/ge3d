@@ -1,0 +1,15 @@
+info :
+
+Linux uses Alsa API to output audi and midi, more information can be found at:
+
+http://home.roadrunner.com/~jgglatt/tech/linuxapi.htm  - This site explain many things about sound on linux.
+
+http://home.roadrunner.com/~jgglatt/ - Home page, the main directory not working...
+
+http://www.alsa-project.org/main/index.php/Main_Page
+
+http://www.alsa-project.org/main/index.php/Tutorials_and_Presentations
+
+updates:
+
+....

@@ -1,0 +1,27 @@
+
+	GE game Engine for Linux
+		
+
+
+------------------------------------------
+
+After doing some attempts on the best option to start with a image file forma, read that BMP and TGA are the most basic file format's to set to
+start with so it will be a good starting point...
+
+-------------------------------------
+
+Main.c working, C is more Raw then PHP which is the language that i start with. C is from the family of PHP language. The sintaxe if very similar, one just have to get use to it or leave for good ... hope not...
+-------------------
+
+For those that do not wish to develop code for engine, it is still a good place to find information. Well documentation can be usefull to us all... The engine is not just to have some funcionality available is also for some one that grab the files and have some well documented code that prevent him from wondering around and not having a clue on what is going on.
+
+--------------------
+
+My initial plan was to focus on one task and develop from there, but since some one may have diferent interestes put some more misc task's, maybe some one wish give  a little contribute.
+
+---------------------------------
+
+Actualy at some point i writte that the intention is to do code refactor, but for me i don't have much knowledge in C and probably many 
+other people. Doing code refactor requires extensive knowledge, it was not a well thought conclusion. The thing that is more realistic to do is to follow tutorials on the tasks to learn more. That was the point of the engine that people can learn from the tasks with tutorials.  
+
+---------------------------
