@@ -1,0 +1,79 @@
+/*
+	The learning log explain the most basic stuff that are more relevante to the language and goes up in complexity, this can minimize the learning
+curve for new commers. But if something does fail and some point start with the tutorials.
+*/
+
+-------------------------------
+
+I thought that understood string variables but i was doing some mistake... think now i got it:
+
+in C the strings are stored in arrays, if you declare it like this : char my_string = "string"; It will result in a error because you are not referinc to the
+adress of the memory  or the array it self.
+
+char *my_string = "string"; // now with the * symbol is refering to the array where is the string, if yo don't plan to do any kind of string 							   //manipulations just want to change the variable this may be the way to go...
+char my_string[] = "string"; // if you do plan to do string manipulation and do changes to the isolated elements you need to make it an array...
+
+The arrays is the way that the physical memorys works, With * you can still do change's to the variable's but you are not working with the mechanics of C. You can do changes because you know where the arrays is located, while not using the array directy. Probably is a bit easy, but
+will consume more memory. 
+
+Because in realty you have 2 variables declared. The array with the adress,  and a secound variable with the adress. Is real confusing, 2 variables
+inside one variable... That actualy one is a pseudo variable. Instead of pointer they should be called pseudo variables it probably make it a bit more
+undestandable... build a pseudo variable to not deal with the C meachanics at this time...
+ 
+In pratical terms one can say: 
+
+The "*" is kind like a quote : "C stores strings in a array format", but now your are making a short cut to access the array format string...  Actualy is not a short cut is more like a fork or a pseudo variable, a adress to the real variable while not using the real variable...
+
+Not sure if those * pointers used in a extensive may not lead to some kind of entagle which can cause some dificulty for the processor to deal
+with since it will have the double of references to the same thing. For now i will just use the basic array format...
+
+------------------------------
+
+int main(){ //int argc, char *argv[]  // args to do loading for printf
+
+Loads int argc, orr a array of args,...
+
+---------------------------------------
+Concatonate strings, 
+
+http://stackoverflow.com/questions/1383649/concatenating-strings-in-c-which-method-is-more-efficient
+
+---------------------------------------
+
+function (*pointer_to_a_variable){ 
+}
+
+Most of the time function work with pointers and no real variables passed... This is something that i stranged a bit since a person is used to
+pass variables and not pointers...
+
+--------------------------------------
+
+ Header files & Preprocessor
+
+http://www.cprogramming.com/tutorial/shared-libraries-linux-gcc.html  
+
+--------------------------------------------------
+
+Comparing 2 strings
+
+http://www.wikihow.com/Compare-Two-Strings-in-C-Programming - 
+
+--------------------------------------
+
+Array string
+
+https://www.cs.bu.edu/teaching/cpp/string/array-vs-ptr/  
+
+
+------------------------------
+
+In C the code keep being included so it need to nefined...
+
+#ifndef jpg_sub 
+#define jpg_sub
+	#include "image/jpg_sub.c"
+#endif 
+
+main(){
+
+}

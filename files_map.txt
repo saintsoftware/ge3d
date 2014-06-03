@@ -1,5 +1,12 @@
-Files at work:
+Files under development work & comments:
 
-Image -> image -> image.c
-Tutorials->
-Tutorials->Segmentation_theory
+C:
+
+main.c
+Image/image_lib.c
+image/bmp.c
+
+Tutorials:
+
+tutorials/Segmentation_theory
+tutorials/misc

@@ -1,12 +1,16 @@
 
-Info:
 
-http://en.wikipedia.org/wiki/JPEG_File_Interchange_Format   - A bit of explaining about the jpg format
-JPG uses huffman coding : http://en.wikipedia.org/wiki/Huffman_coding  - Codification explained that is used in stb_image
+--------------------------
 
-http://www.libpng.org/pub/png/libpng.html  -  it requires zlib 1.0.4 or greater
+More infor for The image/bmp.c - 
 
------------------------------------
+http://en.wikipedia.org/wiki/BMP_file_format
 
+Missing some other tutorials...
 
-updates:
+--------------------------
+
+Misc links a bit out of scoope at the moment...
+
+http://en.wikipedia.org/wiki/JPEG_File_Interchange_Format   
+JPG uses huffman coding : http://en.wikipedia.org/wiki/Huffman_coding

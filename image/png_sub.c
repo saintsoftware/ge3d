@@ -4,7 +4,20 @@
 	images (with or without alpha channel). PNG does not support non-RGB color spaces such as CMYK.
 */
 
+/*
+	PNG Variables
 
+uint8 *png_zbuffer; 
+uint8 *png_zbuffer_end;
+int png_num_bits;
+uint32 png_code_buffer;
+char *png_zout;
+char *png_zout_start;
+char *png_zout_end;
+int   png_z_expandable;
+zhuffman png_z_length;
+zhuffman png_z_distance;
+*/
 
 
 int png(char module, char *adress, char settings){

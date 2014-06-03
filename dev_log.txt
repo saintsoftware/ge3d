@@ -1,6 +1,10 @@
 
 	GE game Engine for Linux
-		
+
+---------------------------------------
+
+Added the c_log which removes explenation of C from code in to the Txt file making a bit more redable to all, new people and those already
+know how to code... To preventing mixing a bit so comment's now will be keep to the objective level...
 
 --------------------------------------------
 

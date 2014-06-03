@@ -3,6 +3,6 @@ Disclaimer's:
 JDC is the author of the theory of Segmentation, which is a structure develop in Procedural code style that 
 mimic a practical application of a GTS Logic Composition. 
 
-It uses the example of a tree that views a piece of software not was a set of modules, but instead was a hole structure that work together in a single objective. Structure together in a logical. 
+It uses the example of a tree that views a piece of software not was a set of modules, but instead was a hole structure that work together in a  common objective. 
 
 JDC is a acronym for the author real name, in other words it's the initials that compose the person real name.
