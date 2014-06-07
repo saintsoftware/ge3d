@@ -1,0 +1,17 @@
+Thre project reached 500 views...
+
+If someone have some kind of code that could be used  which is not overly complex, that can be applied to the Segments, and is more or less able to be tutorialed. In case you don't want to use GitHUb you can send it to the email: general@saintsoftware.eu.pn 
+
+----------------------------------------------
+
+In PHP you have #include_once ; which teals the system to include the file only once, but is not available in C, It will become a lot more redable...
+
+#ifndef image_lib
+#define image_lib
+	#include "image/image_lib.c"
+#endif
+
+vs
+
+#include_once "image/image_lib.c"
+

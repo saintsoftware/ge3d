@@ -1,6 +1,28 @@
 
 	GE game Engine for Linux
 
+
+----------------------------------
+
+typedef char string[]
+
+int main() {
+    string test = "string";
+}
+
+Thought this may look like was a easy fix to handle strings, in the long run can be very probablematic expecialy when you reach to the fase where
+you need to do code optimazition. If you do need to do changes you will need to manualy change all your code...
+
+Best things is to leave the strings was they are in undefined sizes, and latter update what is needed when code is more stable...
+
+char img_format[] = "" ; // after most code is finished if we do know that the variable only needs 5 (+1) characters , we can teak it for it:
+
+char img_format[5] = "" ; // afther all we are agoing to use 10 characters because we find some kind of extra stuff...
+
+ char img_format[10] = "" ; // we add the extra 5 characters, now we will be using a 10 char strings...
+
+since we declare the variable just in one place and reuse it, to tweak all our code, we just need to change it in one place.
+
 ---------------------------------------
 
 Added the c_log which removes explenation of C from code in to the Txt file making a bit more redable to all, new people and those already

@@ -1,12 +1,22 @@
 Files under development work & comments:
 
-C:
+main.c	// Front Controler & load of necessary modules 
 
-main.c
-Image/image_lib.c
-image/bmp.c
+game_files// project files
+screen // window and resolution loading
+		
+Image/image_lib.c // main image Segment
+image/bmp.c // current develop image loading format
 
-Tutorials:
+Logs -> dev_log // updates related to development
+Logs -> c_log // Issues & tutorials related to learnin of C
+Logs -> observation_log // misc comments
 
-tutorials/Segmentation_theory
-tutorials/misc
+Tutorials -> Segmentation_theory-> logic_compositions //General overview and basic concepts about Logic compositions
+Tutorials -> Segmentation_theory-> variables // A introduction on variables and a small overview
+Tutorials -> Segmentation_theory-> C_segment_app // Development on the Segmentation Theory and application
+Tutorials -> Segmentation_theory-> jpgs // resume of the concepts
+
+Tutorias-> code_editor.txt // a general perspective on what code editor to use
+Tutorias-> intro_to_linux.txt // what kind of linux distribution to use
+Tutorials->linux_commands.txt //commands short cut to use some linux tools

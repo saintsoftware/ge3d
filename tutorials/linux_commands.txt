@@ -8,3 +8,19 @@ gnome-system-monitor											 // control panel
 sudo dpkg --get-selections 										// get a list of installed files
 echo $PATH 														// list of added paths
 ls -al 																// show hidden or just ls basic file list
+
+
+/* UFW Ubuntu built in firewall */
+
+http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers 
+
+sudo ufw enable //activate but not on logging
+sudo ufw logging on/off // run on boot
+sudo ufw status verbose // list of firewall settings
+
+sudo ufw allow 80 // in and out
+ sudo ufw allow out 20,21,53,80,123,443/udp
+sudo ufw allow out 20,21,53,80,123,443/tcp // basic services to allow:
+															 443 https, 80 http, 53 domain name, 53 Network Time Protocol 
+															20, 21, FTP transfer & commands		
+sudo ufw allow from  ( your local ip ex: 192.168.1.1) out // if not sure about some kind of service add this to allow local services
