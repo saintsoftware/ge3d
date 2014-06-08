@@ -12,11 +12,16 @@ Logs -> dev_log // updates related to development
 Logs -> c_log // Issues & tutorials related to learnin of C
 Logs -> observation_log // misc comments
 
-Tutorials -> Segmentation_theory-> logic_compositions //General overview and basic concepts about Logic compositions
-Tutorials -> Segmentation_theory-> variables // A introduction on variables and a small overview
-Tutorials -> Segmentation_theory-> C_segment_app // Development on the Segmentation Theory and application
+Tutorials -> Segmentation_theory-> logic_compositions_01 //General overview and basic concepts about Logic compositions
+Tutorials -> Segmentation_theory-> variables_02 // A introduction on variables and a small overview
+Tutorials -> Segmentation_theory-> C_segment_app_03.c // Development on the Segmentation Theory and application
+Tutorials -> Segmentation_theory-> code_redability_04.c // Code readability over decopulation
 Tutorials -> Segmentation_theory-> jpgs // resume of the concepts
 
 Tutorias-> code_editor.txt // a general perspective on what code editor to use
 Tutorias-> intro_to_linux.txt // what kind of linux distribution to use
 Tutorials->linux_commands.txt //commands short cut to use some linux tools
+
+Extras & License -> disclaimer // author copyright claim
+Extras & License -> info // discription about the project
+Extras & License -> author // author profile overview 
