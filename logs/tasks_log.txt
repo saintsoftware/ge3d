@@ -1,0 +1,94 @@
+
+Development Tasks Log
+
+
+The main problem with libraries & tutorials is that they are over complex, for people that are learning, or want to implement them in some other way so is a bit hard to find them...
+
+----------------------------------
+image library
+-----------------------------------
+
+
+More infor for The image/bmp.c - 
+
+http://en.wikipedia.org/wiki/BMP_file_format
+
+Missing some other tutorials...
+
+Misc links a bit out of scoope at the moment...
+
+http://en.wikipedia.org/wiki/JPEG_File_Interchange_Format   
+JPG uses huffman coding : http://en.wikipedia.org/wiki/Huffman_coding
+
+
+---------------------------------------------
+Audio
+--------------------------------
+
+info :
+
+Linux uses Alsa API to output audi and midi, more information can be found at:
+
+http://home.roadrunner.com/~jgglatt/tech/linuxapi.htm  - This site explain many things about sound on linux.
+
+http://home.roadrunner.com/~jgglatt/ - Home page, the main directory not working...
+
+http://www.alsa-project.org/main/index.php/Main_Page
+
+http://www.alsa-project.org/main/index.php/Tutorials_and_Presentations
+
+updates:
+
+
+-------------------------
+Screen
+-------------------------
+
+Info:
+
+Not sure if the code is correct i found it din't test it but it seems legit it was poste at:
+
+Screen resolution : http://surfingtroves.blogspot.pt/2011/01/how-to-get-screen-resolution-in-linux-c.html
+
+Updates :
+
+
+----------------------
+Shared Libraries
+-----------------------
+
+
+info:
+
+Add the shared library for outside libraries
+
+
+updates:
+
+-------------------------
+Tcp Client 
+-------------------------
+
+
+Info:
+
+network tutorial: http://www.tenouk.com/Module39a.html
+
+Updates :
+
+
+-------------------------
+Tcp Server 
+-------------------------
+
+
+Info:
+
+network tutorial: http://www.tenouk.com/Module39a.html
+
+Updates :
+
+...
+
+
+-----------------

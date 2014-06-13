@@ -44,11 +44,13 @@ Main & Sub Segments
 	Project	Info
 */
 
-char project_title[] = "Ge3d Game Engine For linux";
-char project_email[] = "general@saintsoftware.eu.pn";
-char project_author[] = "jdc"; 
-char project_folder[] = "games_files/";
-char project_segment[13] = "loading_menu"; //max leng for array string we will be using + 1 for the end of line /0.
+char pjt_title[] = "GPL Segment Library";
+char pjt_email[] = "general@saintsoftware.eu.pn";
+char pjt_author[] = "jdc"; 
+char pjt_folder[] = "games_files/";
+char pjt_segment[13] = "loading_menu"; //max leng for array string we will be using + 1 for the end of line /0.
+int pjt_bits = 32;
+char pjt_platform = "linux";
 
 /*
 	Database 

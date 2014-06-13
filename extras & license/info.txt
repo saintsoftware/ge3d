@@ -1,9 +1,7 @@
 
-GE3D Game Engine
+Segmentation Open Source Library
 
-This project attempts to developed a set of C libraries that are structured using Segmentation a application of GTS logic composition. 
-
-A code structure concept develop by my self after studying logic for some years and implemented it on a small scale in web pages.
+A code structured that allows to program using GTS logic composition.
 
 The concepts for understanding Segmentation can be found at: tutorials it need a bit re-writting but the information is there. Not that good with
 English...

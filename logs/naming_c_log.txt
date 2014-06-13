@@ -1,0 +1,36 @@
+Naming Conventiong Log
+
+The 3 letter pre-fix is already adopted in most formats, adopting one for programing is not a big change.
+
+The "_" allows to logic separete two words which is implicit for people to recognize those 2 words.
+
+If a format uses less one or more one letter for redability reasons it not a problem to the naming convetion was long is build for redability...
+
+---------------------------------
+
+db_   :  Data Base
+
+example : db_user = 'root'
+
+ This already used in many places though the standard is 3 letters. It makes no logic to use another standard since people already created this standard.
+
+---------------------
+
+pjt_ : Project
+
+example : pjt_title = 'GPL Segment Library'
+
+---------------------
+
+img_ : image
+
+example : img_name = 'heander'
+
+--------------------
+
+png_ , jpg_ , gif_, bmp_
+
+example : jpg_compression = 40
+
+Image formats are straight foward unless some kind of conflit comes up...
+

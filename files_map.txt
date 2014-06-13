@@ -11,11 +11,14 @@ image/bmp.c // current develop image loading format
 Logs -> dev_log // updates related to development
 Logs -> c_log // Issues & tutorials related to learnin of C
 Logs -> observation_log // misc comments
+Logs -> tasks_log //  project tasks devided by learning tutorials
+Logs -> naming_c_log // naming convention pre-fix used
 
 Tutorials -> Segmentation_theory-> logic_compositions_01 //General overview and basic concepts about Logic compositions
 Tutorials -> Segmentation_theory-> variables_02 // A introduction on variables and a small overview
 Tutorials -> Segmentation_theory-> C_segment_app_03.c // Development on the Segmentation Theory and application
 Tutorials -> Segmentation_theory-> code_redability_04.c // Code readability over decopulation
+Tutorials -> Segmentation_theory-> name_convention_05.c // Reuse of code
 Tutorials -> Segmentation_theory-> jpgs // resume of the concepts
 
 Tutorias-> code_editor.txt // a general perspective on what code editor to use
