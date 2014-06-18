@@ -19,6 +19,11 @@ Tutorials -> Segmentation_theory-> variables_02 // A introduction on variables a
 Tutorials -> Segmentation_theory-> C_segment_app_03.c // Development on the Segmentation Theory and application
 Tutorials -> Segmentation_theory-> code_redability_04.c // Code readability over decopulation
 Tutorials -> Segmentation_theory-> name_convention_05.c // Reuse of code
+Tutorials -> Segmentation_theory-> paradigm_shift_06.c // Another perspective
+Tutorials -> Segmentation_theory-> paradigm_shift_07.c // Explain what is the intellectual mind
+Tutorials -> Segmentation_theory-> no_abstraction_08.c // Deals with mistakes that where made previusly
+Tutorials -> Segmentation_theory-> GTS_builder_09.c // GTS builder a toold to handle abstraction for this code style
+
 Tutorials -> Segmentation_theory-> jpgs // resume of the concepts
 
 Tutorias-> code_editor.txt // a general perspective on what code editor to use

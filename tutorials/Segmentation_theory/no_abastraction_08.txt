@@ -1,0 +1,148 @@
+There is a gross mistake with the load and unload theory, this is because Segmentation deals with problems was 
+they come up and unloads them to the next level. So it only raises or lower a level when it need to. 
+So if you already at a needed level with no dependency left it does need more...
+
+In practical terms :
+
+A and A can both exist in different segment's with out affecting which other, because Segmentation deals with 
+logic in layers, work with the logic in a planned way. The current Segment interface menu that was showed in 
+the jpg example, does not need to load unnecessary stuff, was planned to be split it in to is own segment. 
+If logic conflicts due arise you can't handle them with load and unload, it need to be handle with a new Segment.
+
+So expecting that the same character is  loaded twice in to the same Segment is probably a mistake, if the 
+same char is needed to be loaded twice in a Segment then you need to divide it in 2 segments. 
+
+Segment Char load: 
+
+$character1; - DB get char 1 
+$character2;  - DB get char 2
+$character3;  - DB get char 3
+$character4; - DB get char 4
+
+$creature1;
+$creature2;
+
+Segmentation is about planned place holders, so if game have 4 chars and combat have a max 2 creatures attacks
+we set this variables before they are used;
+
+In a way I was contracting my own theory: I did say that GTS deals with programming in a certainty format,
+while STG deals in abstraction layers. In here i was doing a abstraction layer for GTS...
+
+-----------------------------------------
+GTS battle
+------------------------------------------
+
+max_creatures = 100;
+
+while(max_creatures){ //max number of enemy creatures not reached 0 fight
+
+		//when a creature is defeated battle cuts a max creature;
+
+		battle($charcter1, $creature1 );
+		battle($charcter2, $creature1 ); 
+		battle($charcter3, $creature2); 
+		battle($charcter4, $creature2 ); 
+		...
+}
+
+------------------------
+
+You can fight 100 creatures but only 2 attacks at a time. If it have a N attack number. Then is not necessary to
+declare $creature1 and $creature2 variables you need another while loop; Which probably is not necessary since 
+you can backtrack the number of attacks until x round ends, so you record it to a $record variable, and update 
+accordingly.
+
+Guess this was a bit to much theory before the practice. When i went to test the Load and Unload methods I 
+clear saw the mistake...
+
+For a character layer in a array, end up with:
+
+$char_layer = array [strength, agility, endurance, health, ...];  // In top Segment to make it a bit more readable
+$character1 = load_char($char_layer, $id); // to handle the db call
+
+There's no need for abstracting because it's handling logic with Segment's this allows the code to be 3 times more simple.
+So the strength is less complex code and bit less reusable, but still a good decomposition can be used for a similar game. 
+Once you build a Segment layer is not that hard to adapt it to a new project that is similar.
+
+The point of GTS is optimization, one cut off excessive abstraction and end's up with the place holder variables 
+for the project. In a way GTS cuts the crap, so was mention before it is something that deal a lot with the 
+person personality, if you are a objective person you may like this more, if you are more loose you may like OOP more.
+
+Now that i can explain this a bit better if this is to be implemented in to a project one can do this by steps:
+
+1 º Project Design; // theory of the functions design
+2º Interface Design; // implementation of functions in to a interface
+3º Variables place holder; // set all the variables for the interface and connected logic
+4º Implement Logic; // develop the code
+
+So one should not start by developing logic with out having all other stages finished, because one will lose time.
+
+If one follows steps this will add up to detect and fix logic problems before they start to entangle: code + interface +
+functionality. Often the problems com from mixing element's while in their natural environments things tend to be
+less problematic.
+
+A way to do this is to created simulated data array for example:
+
+$dwarf = array (basic layer);
+$character1 =  $dwarf ;
+
+when the step of "variable place holder" is over replace with:
+
+$character1 = load_char($char_layer, $id);
+ 
+If thing's got entangle in one stage, best thing to do is to start all over again, and replace only the stuff that is 
+needed, this way one can detect errors. If logic was break, or some functionality was wrongly produced, and is giving 
+more time to fix then is expected, by starting over, one can fix some stuff before it get to that point. This is 
+because GTS assumes that previous step is ready for production, if it is not and one advanced it will get entangle at
+some point. So when try and did not work, then maybe is stage fail problem.
+ 
+-----------------------------------
+
+To clean up the erroneously assumptions before:
+
+img_name = "";  
+jpg_compression="";  // in the end this is just another layer of abstraction, probably the same was OOP, but in a 
+different style...
+
+This is the proper GTS style it deals with the variables was place holders for the interface...
+
+$top_header = load_png('image');
+$bottom_header = load_jpg('image');
+$map = load_gif('image');
+$character1;
+$character2;
+$character3;
+$character4;
+
+-------------------------------------------------
+
+To build a library in GTS?
+
+A library was no interface to output but the principle is the same of no abstract layer:
+
+------------------------------------
+
+include "jpg_lib.c";
+include "png_lib.c";
+
+$images_folder = "project/images/" ;
+$compression;
+$bytes;
+
+$jpg_settings = array('compression' => 40, 'bytes' =>  8, 'location' => 'header/');
+function  jpg(){ }// example
+
+pre_fix is only necessary when conflicts do come up, like db_name , and a generic $name var...
+
+Why no abstracted layer? Because the code can be simplified to a level it does not need a abstraction layer. Once i 
+found this code that deals with pagination in a very abstract way i render the code end up with a 3 time more simple code.
+
+A code can be simplified to a point that only have place holder variables.
+
+There's no point in building a GTS code library was it happens with STG OOP, because it deals with problems in a 
+objective way and not in a abstract way.
+
+So how can we deal with abstraction in GTS?
+
+What it can do... Create a software that can structure for the developer. That will be the subject of the next topic.
+
