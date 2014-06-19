@@ -1,0 +1,139 @@
+
+Structure and develop the GTS builder...
+
+Forget to mention the GTS builder can also tweak 3D environment's, because it does not need to
+be limited to web or interface object's. 3D element's can still be a valid option for the builder. Can use a display
+like blender, so one can see thing's around and tweak them directly with code... 
+
+So since it deals with heavy abstraction the most logic thing to do is to use OOP, but with code snippets still...
+A code library build much faster a application since it deals with problems found by other people. So will use OOP to 
+manage this code library for us...
+
+To save snippets one could consider a Data Base, but the advantages of folder structure it's more ease to use with
+code editors, while DB will not be that easy to implement, but will be more well structured... Files are 
+more easy to work with since they can be use in more ways... 
+
+I think there are several OOP programming languages where the GTS builder can be done... I have some experience with 
+python and C++ so i think python may be a little limited for what we attempt to do in here... Other options may still
+be plausible, but i do not have any knowledge on those, and i kind prefer the PHP, C, C++ syntax since I'm more familiar
+with those over the heavy OOP design used in Python...
+
+GTS Builder structure :
+
+The snippets need a type, so we have a snippet in a folder structure we see the snippet type :
+"Mysql -> db query" so it can map it to a mysql oop -> db query.
+
+class  mysqli {
+
+//Query string Example: "mysqli_query("SELECT * FROM users WHERE id = '45' ORDER BY ASC ");"
+
+$rows;
+$table; 
+$from; 
+$where;
+$limit;
+$order;
+
+	function get_query($query_string){
+
+		Input on the $query_string : "mysql_bug_type_query("SELECT * FROM users WHERE id = '45' ORDER BY ASC ");"
+		
+		If the name "mysqli_query" is not correct return the error : The query string is miss spell, you wish to update?
+		old string : "mysql_bug_type_query";
+		new string : "mysqli_query";		
+		? Y/N
+	
+	/*	
+	if the user at any given time types something incorrectly the system handles that for the user so it does not have
+	to wast endless hours back tracking miss spelled strings... But this will only check when the user saves, so it does
+	not have the harass of the real time miss spell tracking that we have in some spell checkers.
+	
+	The problem is not just spell checking but var dependency. The system recognize this was valid code:
+	mysql_query , but we are we are using mysqli_query, so this will not be detected in our abstraction. While 
+	if we are typing this may happen and the error may be very hard to see and
+	consume endless hours. Actually this bug happen to me and i lost a good chunk of ours to back track this...  		 	
+	*/
+	
+	}
+
+	function write(){ // write the final result in to the temp file;
+		
+	}
+
+}
+
+class segment{ // build the segments vars
+					
+$name;
+$declared_segments;
+
+}
+
+class database {
+
+//example of the connect query connect string: 'mysqli_connect("myhost","myuser","mypassw","mybd");'
+
+$host;
+$user;
+$password;
+$name;
+
+   // check connection attempt to find out if there's a problem with : host, pass, user or database...
+   // test if vars are declared at top segment, if not:
+
+	Var $db_host not declared : you wish to create that now?
+	new var : "$db_host";	? Y/N   // created the dependency var...
+   No value for $db_host: "localhost"; ? Y/N // load a proper value to connect with db... 
+   error : 
+   if db not found, test all other vars, if all passed ok :: the connection error have to do with 
+   firewall or configurations because all variables passed OK...  
+   
+   This may be implicit knowledge for a advanced user but it may not be that obvious for a new comer, so this is those
+   type of simple things ... but when add up all together make the process of using and handling programming some times
+   a big mess...  
+}
+
+class mysql_join extends mysql{
+
+$join;
+$on;
+$tables; 
+
+	// since the join query is different from a normal query need a different set of vars and functions. It extends
+	the base query to inherit some previous write functionality...
+} 
+
+/*
+	Manual build of the DB table
+*/
+
+class table_builder{
+
+$table;
+
+	function get_vars(){
+		// attempt to build all vars in to a table;
+	}
+
+}
+
+class users_table extends table_builder{
+
+$id;
+$user_name;
+$email;
+$password;
+$hash;
+
+/*
+	The user build this based on the visual database input tool;  
+	At any time if do changes where made in one place and dependencies where forget the layer will check for those
+	dependency changes and inform that they are missing: with the error to correct or create those changes...
+*/
+
+} 
+
+The point is to deal with the most abstraction that we possible can. The more abstraction means it does mores tests 
+which result in less bugs and problems for us to back track... We can still work with simple and objective
+code to achieve 100% speed but not losing the capability to have abstraction and automation on the planification side...
+

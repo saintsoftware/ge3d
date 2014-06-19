@@ -1,11 +1,11 @@
 The GTS Builder comes with a gts_builder.jpg. In here going to give the theory overview and at the jpg some interface info...
 
-Since the code is used in a very straight foward way, one can easy build and implement a toold that build that
+Since the code is used in a very straight foward way, one can build and implement a toold that build the
 code for the user. 
 
-So this is the place to build abstraction layers work for GTS, outside the scoop of programming...
+In GTS the abstraction layer is outside the programming scoop....
 
-One for example can have a database build that deals with:
+A example can be to develop a database that deals with:
 
 MYSQL
 ODBC
@@ -19,9 +19,9 @@ the software.
 The GTS builder works in a simple way: it holds code snippets insinde folders with a separeted file for which snippets, so
 when the builders loads it creates temporary files from the default snippets and the user edit this ones or reset to default's
 so it have a code library that automates all for him while not affecting the code efficiency. When is necessary it builds the
-app retaining the reference to the temp snippets, so the user can keep working with them.
+app to test.
 
-A simple way is to do it with comments so it can be used with any editor:
+The temporary code works in a simple way it uses comments so it can be used with any editor:
 
 
 // GTS Builder start :: character1
@@ -39,18 +39,18 @@ $character2;
 
 So when the GTS builder search inside those files it recognise these key phrases and loads the app to the builder:  
 
-Another thing is comments since it, you can still add the other type of comments to the temp (\* another style */), 
-which the GTS builder do not leave on the build app as it removes comment's to build but they will be there on the temp app. 
+Another thing is comments since it, you can still add the other type of comments to the temp files (\* another style */), 
+which the GTS builder leave and removes only the builder comment's when building. 
 
-The code style can have any kind of abstraction library while not affecting your code:
+People can have their own style of abstraction library while not affecting the code:
 
 A : load 2 lines of code
-b : 3 lines
-c : 10 lines;
-f : 5 lines;
+B : 3 lines
+Ch : 10 lines;
+FT : 5 lines;
 
-You are in charge of your own abstraction layer while the code remains style the same for all applications. Any one can 
-code with the builder because if do not understand the abstraction some one created you can always read directly the code
+You are in charge of your own abstraction layer while the code remains the same for all applications. Any one can 
+code with the builder because if you not understand the abstraction some one created you can always read directly the code
 which is the same. Actually very similar because it's loaded from the same default, so it add that plus to development.
 
 Another stuff was already mention is that bug's are much more easy to fix because, it have all your variables loaded:
@@ -58,9 +58,10 @@ Database , database abstraction layer , vars, function, query's,  segments , log
 
 When for example a query logic do fail to provide a successful result the GTS builder can recognize and inform where is the
 mistake and what is doing wrong. Another problem with code development we often need to build a bit more of complexity
-to do code tests, so tests could also be build but they will not be there in the live app. So to develop and fix bugs.
+to do code tests, so tests could also be build but they will not be there in the live app. They work to develop and fix bugs.
 
-for example a builder query :
+A example of a query in the GTS builder:
+
 $table = "users";
 $user_id = 45;
 $action  = "SELECT";
@@ -69,7 +70,7 @@ $where = "user = '$user_id' ";
 $limit = "LIMIT 5";
 
 mysqli_query ($db, "$action $rows FROM $table $where $limit"); // builder temporary code, to recognize logic mistakes...
-mysqli_query ($db, "SELECT * FROM users WHERE  user_id = '45' LIMIT 5"); // live query
+mysqli_query ($db, "SELECT * FROM users WHERE  user_id = '45' LIMIT 5"); // live code
 
 Code will be very high performance efficient while having the capability to work with abstraction layers.
 
@@ -81,8 +82,10 @@ code and it loads it back.
 
 For example Start a resync on temp builder code;
 
-So you made changes to a couple of functions and you don't want to copy past back to builder, add the tags in the specific
-files functions and request a resync. The builder get only those tags and updates only those tags.
+So you made changes to a couple of functions and you don't want to copy past back to builder. Add the builder tags in 
+the specific files functions and request a resync. The builder get only those tags and updates only those tags back to
+temp files.
 
-One can choose to continue to use the editor while remaining the possibility to do some test's inside the builder.
+The result is: one can choose to continue to use the editor while remaining the possibility to do some test's inside 
+the builder.
 
