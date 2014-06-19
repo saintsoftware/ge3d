@@ -21,8 +21,9 @@ Tutorials -> Segmentation_theory-> code_redability_04.c // Code readability over
 Tutorials -> Segmentation_theory-> name_convention_05.c // Reuse of code
 Tutorials -> Segmentation_theory-> paradigm_shift_06.c // Another perspective
 Tutorials -> Segmentation_theory-> paradigm_shift_07.c // Explain what is the intellectual mind
-Tutorials -> Segmentation_theory-> no_abstraction_08.c // Deals with mistakes that where made previusly
-Tutorials -> Segmentation_theory-> GTS_builder_09.c // GTS builder a toold to handle abstraction for this code style
+Tutorials -> Segmentation_theory-> no_abstraction_08.txt // Deals with mistakes that where made previusly
+Tutorials -> Segmentation_theory-> GTS_builder_09.txt // GTS builder a toold to handle abstraction for this code style
+Tutorials -> Segmentation_theory-> builder_structure_10.txt // GTS builder a toold to handle abstraction for this code style
 
 Tutorials -> Segmentation_theory-> jpgs // resume of the concepts
 
